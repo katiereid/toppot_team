@@ -14,7 +14,7 @@ function Location(shopName, openHours, peopleNumLow, peopleNumHigh, percentEnter
   this.percentEnter          = percentEnter;
   //possible number of people who might walk past shop in a given hour
   this.numPeopleThisHour     = function() {
-    return (Math.floor((this.peopleNumHigh - this.peopleNumLow) * Math.random()) + (this.peopleNumLow + 1));
+    return (Math.random() * Math.floor((this.peopleNumHigh - this.peopleNumLow)) + (this.peopleNumLow + 1));
   }
   this.percentCalc           = function() {
     return (this.percentEnter / 100);
