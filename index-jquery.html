@@ -1,0 +1,57 @@
+<!doctype html>
+<html class="no-js" lang="eng">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    </head>
+    <body>
+
+      <h1>How Many Donuts Does Your Store Need?</h1>
+      <section id="userInstructions">
+        <p>In order to calculate the number of donuts your store needs, per hour, with a daily total, enter in the following information: </p>
+        <ol>
+          <li>Enter in your shop location. </li>
+          <li>Enter the number of hours your shop is open.</li>
+          <li>Enter the low number (or minimum) on the range of people who walk by hourly.</li>
+          <li>Enter the high number (or maximum) on the range of people who walk by hourly.</li>
+          <li>Enter the percent of those who walk by who actually enter.</li>
+          <li>Finally, enter the average number of donuts a customer orders and click "submit"!</li>
+        </ol>
+      </section>
+      <section id="userInput">
+        <div id="shopLocationName">
+          <p>Shop Name: <input type="text" id="shopNameInput" class="forInput"></p>
+        </div>
+        <div id="hoursOperating">
+          <p>Number of Hours Open per Day: <input type="text" id="hoursOperatingInput" class="forInput"> </p>
+        </div>
+        <div id="hourlyFootTraffic">
+          <p>Hourly Foot Traffic:</p>
+          <ul>
+            <li>Minimum Hourly Foot Traffic <input type="text" id="hourlyFootTrafficMinInput" class="forInput"></li>
+            <li>Maximum Hourly Foot Traffic <input type="text" id="hourlyFootTrafficMaxInput" class="forInput"></li>
+          </ul>
+        </div>
+        <div id="percentEnter">
+          <p>Percent of Foot Traffic who Enter: <input type="text" id="percentEnterInput" class="forInput"></p>
+        </div>
+        <div id="avgDonutsOrdered">
+          <p>Average Number of Donuts Ordered per Customer: <input  type="text" id="avgDonutsOrderedInput" class="forInput"></p>
+        </div>
+      </section>
+      <section>
+        <button type="button">Submit</button>
+      </section>
+      <div id="output">
+        <ul id="outputList">
+        </ul>
+      </div>
+      <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+      <script src="cleanDonutsFriday-jquery.js">Donut Projections</script>
+    </body>
+</html>
